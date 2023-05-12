@@ -55,7 +55,7 @@ Cypress.Commands.add('gerarMassaAutomatica', () => {
              *      Celular
              *      E-mail
              * 
-             * Caso o teste a ser executado envolva envio/recebimento de mensagens, não é recomendável utilizar um e-mail aleatório
+             * Caso o teste a ser executado envolva envio/recebimento de mensagens, não é recomendável utilizar um e-mail/celular aleatório
             */
             const nome = faker.name.firstName() + ' ' + faker.name.lastName();
             const cpf = faker.br.cpf();
