@@ -1,4 +1,4 @@
-Cypress.Commands.add('selecionaUfIndicado', (uf) => {
-    cy.get('#mui-component-select-estado').click();
+Cypress.Commands.add('selecionaUf', (uf) => {
+    cy.get('#select-estado').click();
     cy.get('[data-value="' + uf + '"]').click();
 })
