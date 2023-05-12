@@ -14,6 +14,7 @@ describe('Demonstração de criação de arquivo com dados aleatórios', () => {
       cy.get('input[name="telefone"]').type(`${usuario.celular}`);
       cy.get('input[name="email"]').type(`${usuario.email}`);
       cy.get('button').contains('Enviar').click();
+      cy.url().should('eq', '/success');
     });
   })
 })
