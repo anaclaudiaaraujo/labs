@@ -1,4 +1,4 @@
-describe('Demonstração de criação de arquivo com dados aleatórios', () => {
+describe('Demonstração de criação de arquivo com dados aleatórios e seu consumo', () => {
   before(() => {
     cy.gerarMassaAutomatica();
     cy.visit('/');
