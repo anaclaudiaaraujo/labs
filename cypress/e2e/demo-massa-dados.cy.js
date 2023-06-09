@@ -1,9 +1,9 @@
 describe('Demonstração de criação de arquivo com dados aleatórios e seu consumo', () => {
   before(() => {
     cy.gerarMassaAutomatica();
-    cy.visit('/');
+    //cy.visit('/');
   });
-  it('Consumir dados do arquivo', () => {
+  it.skip('Exemplo de como consumir dados do arquivo', () => {
     var usuarios = require('../fixtures/nome-do-arquivo.json');
     usuarios.forEach(usuario => {
       cy.get('input[name="nome"]').type(`${usuario.nome}`);
@@ -16,5 +16,5 @@ describe('Demonstração de criação de arquivo com dados aleatórios e seu con
       cy.get('button').contains('Enviar').click();
       cy.url().should('eq', '/success');
     });
-  })
+  });
 })

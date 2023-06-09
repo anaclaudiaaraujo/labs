@@ -1,2 +1,2 @@
-- Exemplo de criação automática de massa de dados.
+- Exemplo de criação automática de massa de dados e consumo dos dados gerados.
 - Exemplo de autenticação via API
